@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="edu.desu.dsuappacademy.tabernaclebaptistchurch.MainActivity">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:onClick="tbc"
+        android:scaleType="fitXY"
+        android:src="@drawable/tbc"/>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.48"
+            android:text="About Us"
+            android:scaleType="fitXY"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:id="@+id/outreach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.48"
+            android:text="Outreach"
+            android:padding="16dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.83"
+            android:onClick="call"
+            android:text="Call"
+            android:scaleType="center"
+            android:padding="16dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.11"
+            android:onClick="map"
+            android:text="map"
+            android:padding="16dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
